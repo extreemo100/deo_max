@@ -41,7 +41,7 @@
       .top-left {
         top: 20px;
         left: 0px;
-        width: 250px; /* Adjust the width as needed */
+        width: 200px; /* Adjust the width as needed */
         height: auto; /* Maintain aspect ratio */
         display: none; /* Initially hidden */
       }
@@ -49,7 +49,7 @@
       .top-right {
         top: 20px;
         right: 0px;
-        width: 250px; /* Adjust the width as needed */
+        width: 200px; /* Adjust the width as needed */
         height: auto; /* Maintain aspect ratio */
         display: none; /* Initially hidden */
       }
@@ -141,7 +141,7 @@
               button.style.display = 'none';
             });
           };
-
+          
           // Variables for mouse drag rotation
           let isDragging = false;
           let previousMouseX = 0;
@@ -202,7 +202,6 @@
           await mindarThree.start();
           renderer.setAnimationLoop(() => {
             const delta = clock.getDelta();
-            gltf.scene.rotation.set(0, 0, 0);
             mixer.update(delta);
             renderer.render(scene, camera);
           });
